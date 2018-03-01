@@ -328,7 +328,7 @@ import static java.util.Collections.unmodifiableMap;
 
 /**
  * Builds and binds the generic action map, all {@link TransportAction}s, and {@link ActionFilters}.
- * [tzl]: rest api service, springmvc alike
+ * [tzl]: rest api service, servlet filter alike
  */
 public class ActionModule extends AbstractModule {
 
