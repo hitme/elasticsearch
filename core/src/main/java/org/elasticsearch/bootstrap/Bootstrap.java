@@ -214,7 +214,7 @@ final class Bootstrap {
             protected void validateNodeBeforeAcceptingRequests(
                 final BootstrapContext context,
                 final BoundTransportAddress boundTransportAddress, List<BootstrapCheck> checks) throws NodeValidationException {
-                BootstrapChecks.check(context, boundTransportAddress, checks);
+                BootstrapChecks.check(context, boundTransportAddress, checks);// [tzl]: validation example
             }
         };
     }
@@ -328,7 +328,7 @@ final class Bootstrap {
                 throw new BootstrapException(e);
             }
 
-            INSTANCE.start();
+            INSTANCE.start();// [tzl]: cluster node started
 
             if (closeStandardStreams) {
                 closeSysError();

@@ -156,7 +156,7 @@ public final class Elements {
         }
 
         /**
-         * Creates a private recording binder.
+         * Creates a private recording binder.[tzl]: prototype pattern
          */
         private RecordingBinder(RecordingBinder parent, PrivateElementsImpl privateElements) {
             this.stage = parent.stage;

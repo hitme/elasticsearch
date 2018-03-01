@@ -158,7 +158,7 @@ final class BootstrapChecks {
                 messages.add("[" + (i + 1) + "]: " + errors.get(i));
             }
             final NodeValidationException ne = new NodeValidationException(String.join("\n", messages));
-            errors.stream().map(IllegalStateException::new).forEach(ne::addSuppressed);
+            errors.stream().map(IllegalStateException::new).forEach(ne::addSuppressed);//[tzl]: errors wrapped in exception
             throw ne;
         }
     }

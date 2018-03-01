@@ -25,6 +25,7 @@ import org.elasticsearch.common.transport.BoundTransportAddress;
 import java.util.List;
 
 /**
+ * [tzl]: exception example
  * An exception thrown during node validation. Node validation runs immediately before a node
  * begins accepting network requests in
  * {@link Node#validateNodeBeforeAcceptingRequests(org.elasticsearch.bootstrap.BootstrapContext, BoundTransportAddress, List)}.

@@ -159,7 +159,7 @@ public abstract class TransportAction<Request extends ActionRequest, Response ex
 
         @Override
         public void proceed(Task task, String actionName, Request request, ActionListener<Response> listener) {
-            int i = index.getAndIncrement();
+            int i = index.getAndIncrement();//[tzl]: responsible chain pattern
             try {
                 if (i < this.action.filters.length) {
                     this.action.filters[i].apply(task, actionName, request, listener, this);
