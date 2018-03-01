@@ -69,7 +69,7 @@ class Elasticsearch extends EnvironmentAwareCommand {
     }
 
     /**
-     * Main entry point for starting elasticsearch
+     * Main entry point for starting elasticsearch [tzl]: 1. cli entry point
      */
     public static void main(final String[] args) throws Exception {
         // we want the JVM to think there is a security manager installed so that if internal policy decisions that would be based on the

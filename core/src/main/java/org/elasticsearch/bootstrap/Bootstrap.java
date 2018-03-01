@@ -63,7 +63,7 @@ import java.util.Collections;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * Internal startup code.
+ * Internal startup code.[tz]: key point
  */
 final class Bootstrap {
 

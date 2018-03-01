@@ -113,7 +113,7 @@ public abstract class Command implements Closeable {
     }
 
     /**
-     * Executes the command, but all errors are thrown.
+     * Executes the command, but all errors are thrown.[tzl]: jopt-simple wrapping
      */
     void mainWithoutErrorHandling(String[] args, Terminal terminal) throws Exception {
         final OptionSet options = parser.parse(args);
